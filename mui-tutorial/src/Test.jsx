@@ -3,7 +3,7 @@ import {Typography} from '@mui/material';
 
 function Test() {
     return (
-        <Typography>Hello World</Typography>
+        <Typography variant='h5'>Hello World</Typography>
     )
 }
 
