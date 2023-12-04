@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 
 function Test() {
     const [inputs, setInputs] = useState({
@@ -23,6 +23,10 @@ function Test() {
                 <TextField name='name' value={inputs.name} onChange={handleChange} type={'text'} sx={{ margin: 3 }} placeholder='Name' variant='outlined' />
                 <TextField name='email' value={inputs.email} onChange={handleChange} type={'email'} sx={{ margin: 3 }} placeholder='Email' variant='standard' />
                 <TextField name='password' value={inputs.password} onChange={handleChange} type={'password'} sx={{ margin: 3 }} placeholder='Password' variant='filled' />
+
+                <FormGroup>
+                    <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
+                </FormGroup>
                 <Button type='submit'>Submit</Button>
             </form>
         </div>
